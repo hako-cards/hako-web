@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: white;
+    --text: #222222;
+    --link: #5529de;
+    --hover: #5529debb;
+    --secondary-text: #747474;
+    --header-gradient-start: #f7f7f5;
+    --header-gradient-end: #dcc5ff;
+    --body-gradient-start: #dcc5ff;
+    --body-gradient-end: #f7f7f5;
+    --pro-tag: #dfc7ff;
+  }
+}

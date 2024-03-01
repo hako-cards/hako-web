@@ -1,0 +1,154 @@
+.gradient {
+    background-image: linear-gradient(to bottom right, var(--header-gradient-start), var(--header-gradient-end));
+}
+
+.body-gradient {
+    background-image: linear-gradient(to bottom left, var(--body-gradient-start), var(--body-gradient-end));
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.header-container {
+    padding-top: max(5%, 40px);
+    padding-bottom: max(5%, 40px);
+    overflow: clip;
+}
+
+.devices {
+    margin-top: 2em;
+}
+
+.body-container {
+    overflow: clip;
+}
+
+.press {
+    padding-top: max(5%, 40px);
+}
+
+.presskit-img {
+    width: 100%;
+}
+
+.paragraph {
+    padding-top: max(5%, 40px);
+    padding-bottom: max(5%, 40px);
+    display: flex; 
+    align-items: center;
+}
+
+.left-screenshot {
+    padding-top: max(5%, 40px);
+}
+
+.screenshot {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.screenshot-img {
+    width: 100%;
+}
+
+.screenshot-img-clipped {
+    margin-bottom: -91%;
+}
+
+.screenshot-img-clipped-large {
+    margin-bottom: -52%;
+}
+
+h1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+h3 {
+    opacity: 0.85;
+}
+
+h4 {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+p {
+    letter-spacing: 0.02rem;
+}
+
+.pro-tag {
+/*    font-variant: small-caps;*/
+    font-size: 80%;
+    font-weight: 600;
+    background: var(--pro-tag);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.faq-img {
+    max-width: 100%;
+    width: 393px;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 680px) {
+  .body-container {
+    padding-top: max(5%, 20px);
+    padding-bottom: max(5%, 20px);
+  }
+
+  .image-row {
+    display: flex; 
+    align-items: middle;
+  }
+
+  .hide-mobile {
+    display: inline;
+  }
+
+  .screenshot {
+    overflow: revert;
+  }
+
+  .screenshot-img {
+    width: 60%;
+    padding-left: 20%;
+    margin-bottom: -50%;
+  }
+
+  .right-screenshot {
+    transform: rotate(0.008turn);
+  }
+
+  .left-screenshot {
+    transform: rotate(-0.008turn);
+    padding-top: revert;
+  }
+
+  .made-with {
+    text-align: right;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .phone-header {
+    font-size: 1.7rem;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 980px) {
+  .phone-header {
+    font-size: 2.2rem;
+  }
+}
